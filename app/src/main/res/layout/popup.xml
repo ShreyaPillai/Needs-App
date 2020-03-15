@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_id"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <RelativeLayout
+            android:background="@color/cardview_dark_background"
+            android:padding="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/title"
+                android:text="@string/enter_item"
+                android:textStyle="italic"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/reqItem"
+                android:layout_below="@+id/title"
+                android:layout_width="match_parent"
+                android:hint="@string/hint_item"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/ItemQuantity"
+                android:layout_below="@+id/reqItem"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:hint="@string/hint_qty"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/ItemColor"
+                android:layout_below="@+id/ItemQuantity"
+                android:layout_width="match_parent"
+                android:hint="@string/hint_color"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/ItemSize"
+                android:layout_below="@+id/ItemColor"
+                android:layout_width="match_parent"
+                android:hint="@string/hint_size"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/SaveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ItemSize"
+                android:layout_marginEnd="5dp"
+                android:text="@string/save_button"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
