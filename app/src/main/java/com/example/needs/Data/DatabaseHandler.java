@@ -205,5 +205,4 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return  cursor.getCount();
     }
 
-
 }

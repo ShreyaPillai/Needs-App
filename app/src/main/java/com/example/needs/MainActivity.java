@@ -43,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
 
         databaseHandler = new DatabaseHandler(this);
 
+        BypassActivity();
+
         List<Item> items = databaseHandler.getallItem();
 
         for(Item item : items){
@@ -100,6 +102,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    private void BypassActivity(){
+
+        if(databaseHandler.getItemCount()>0){
+
+            startActivity(new Intent(MainActivity.this,ListActivity.class));
+            finish();
+        }
+    }
     private void saveItem(View view) {
 
 
