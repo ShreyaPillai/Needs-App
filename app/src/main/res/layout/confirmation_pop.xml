@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="23dp">
+
+            <TextView
+                android:id="@+id/text_alert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sure_text"
+                android:layout_centerHorizontal="true"
+                android:padding="6dp"
+                android:textSize="19sp"
+
+                />
+            <Button
+                android:id="@+id/conf_no_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_button"
+                android:layout_marginTop="40dp"
+                android:background="@color/colorPrimaryDark"
+                />
+
+            <Button
+                android:id="@+id/conf_yes_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes_button"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="40dp"
+                android:background="@color/colorPrimaryDark"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
